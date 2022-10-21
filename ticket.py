@@ -88,7 +88,7 @@ def get_ticket_id_from_tickets():
     """Получаем словарь с номерами ID заявок из списка"""
     tickets = get_tickets()
     logger.info('Succesfully get tickets list from API.')
-    tickets_id = tickets['data'].keys()
+    tickets_id = tickets['data'].items()
     return tickets_id
 
 def get_ticket():
